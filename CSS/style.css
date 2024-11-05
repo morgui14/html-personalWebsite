@@ -1,0 +1,246 @@
+body{
+    background-color: #FEFAE0;
+}
+#main-photo {
+    background-color: #5F6F52; /* Couleur de fond */
+    height: 90vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centrer verticalement */
+    align-items: center;
+}
+
+#planette{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#computer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+h1{
+    font-family: "Satisfy", cursive;
+    color: #FEFAE0;
+}
+h2{
+    font-family: "Abril Fatface", serif;
+    color: #5F6F52;
+    text-align: center;
+}
+h3{
+    color: #5F6F52;
+    font-family: "Abril Fatface", serif;
+    font-size: 150%;
+
+}
+p{
+    font-family: "Poppins", sans-serif;
+    color: #B99470;
+    text-align: center;
+}
+
+
+#main-photo h1{
+    position: absolute;
+    top: 15vh;
+    left: 15vw;
+    font-size: 4rem;
+    text-align: center;
+}
+
+#main-photo p{
+    position: absolute;
+    bottom: 18vh;
+    right: 13vw;
+    font-size: 3rem;
+    color: #A9B388;
+}
+
+#about-me{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5vh;
+
+}
+
+#about-me img{
+    border-radius: 90%;
+    height: 25vh;
+}
+#about-me h2{
+    padding-top: 4vh;
+}
+#about-me p{
+    padding-top: 1vh;
+}
+#skills{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+article img{
+    display: flex;
+    float: left;
+    /* text-align: center; */
+    align-items: baseline;
+    margin-right: 2vh;
+    height: 18vh;
+    
+}
+
+article{
+    padding: 5vh;
+    margin : 2vh;
+    text-align: center;
+    flex-basis: 35vw;
+    background-color: #A9B388;
+   min-width: 40vw;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+article:hover{
+    background-color: rgba(169, 179, 138, 80%);
+    transform: translateY(-5px);
+}
+article p {
+    /* clear: both; */
+    color: #FEFAE0;
+    margin-top: 2vh;
+    
+}
+
+#contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Centre les éléments horizontalement */
+    text-align: center; /* Centre le texte */
+    margin-top: 5vh;
+    
+}
+#contact p {
+    margin-top: 3vh;
+    margin-bottom: 5vh;
+}
+.btn{
+    background-color: #5F6F52;
+    color: #FEFAE0;
+    margin-bottom: 10px;
+
+}
+.btn:hover{
+    background-color: #B99470;
+    color: #FEFAE0;
+}
+footer{
+    height: 20vh;
+    background-color: #5F6F52;
+    color: #A9B388;
+    display: inline-block;
+    width: 100vw;
+}
+#link{
+    display: flex;
+    justify-content: center;
+    gap: 10vw;
+    margin-top: 5vh;
+}
+
+footer a {
+    color: #A9B388;
+    text-decoration: none;
+}
+
+footer p{
+    font-size: 10px;
+    color: #A9B388;
+    margin-top: 5vh;
+}
+@media (max-width: 1024px){
+    #main-photo img {
+        max-width: 420px; /* Réduit la taille sur tablette */
+    }
+    #main-photo h1 {
+        top: 30vh;
+        left: 15vw;
+    }
+    #main-photo p {
+         bottom: 35vh; 
+        right: 15vw; 
+    }
+    article img{
+        height:12vh ;
+    }
+    #skills{
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    #main-photo {
+        min-height: 80vh;
+
+    }
+    #main-photo img {
+        max-width: 300px; /* Réduit la taille sur tablette */
+    }
+    #main-photo h1 {
+        top: 30vh;
+        left: 15vw;
+        font-size: 3rem; /* Réduire la taille du texte */
+    }
+    #main-photo p {
+         bottom: 35vh; 
+        right: 15vw; 
+        font-size: 2rem; /* Réduire la taille du texte */
+    }
+    article img{
+        height:12vh ;
+    }
+    #skills{
+        display: block;
+    }
+    
+
+    
+  
+}
+
+@media (max-width: 480px) {
+    #main-photo {
+        min-height: 40vh;
+        
+    }
+    #main-photo img {
+        max-width: 200px; /* Réduit la taille sur tablette */
+    }
+    #main-photo h1 {
+    
+        /* top: 35vh; /* Ajuster la position en fonction de l'espace disponible 
+        left: 15vw; */
+        font-size: 2.4rem; /* Réduire encore plus la taille du texte */
+    }
+
+    #main-photo p {
+        /* bottom: 35vh; /* Ajuster la position du paragraphe 
+        left: 20vw; */
+        font-size: 1.2rem; /* Réduire encore plus la taille du texte */
+    }
+    article img{
+        height:12vh ;
+    }
+    #skills{
+        display: block;
+    }
+
+}
